@@ -122,6 +122,12 @@ function LoginPage() {
             {errors.password && <span className="field-error">{errors.password}</span>}
           </div>
 
+          <div className="demo-login-box">
+            <strong>Demo Login</strong>
+            <span>Email: admin@netflix.com</span>
+            <span>Password: password123</span>
+          </div>
+
           <button type="submit" className="sign-in-btn" disabled={loading}>
             {loading ? 'Signing In...' : 'Sign In'}
           </button>
